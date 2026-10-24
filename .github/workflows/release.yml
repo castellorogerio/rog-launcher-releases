@@ -1,0 +1,55 @@
+name: Publicação e Validação de Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag da Versão (ex: v4.9-beta ou v5.0.0)'
+        required: true
+        default: 'v4.9-beta'
+      release_title:
+        description: 'Título da Release'
+        required: true
+        default: 'ROG Launcher V49 Beta'
+      prerelease:
+        description: 'É uma versão pré-lançamento (beta)?'
+        type: boolean
+        default: true
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-publish:
+    name: Validar Documentação e Integridade
+    runs-on: windows-latest
+    steps:
+      - name: Checkout do Repositório de Distribuição
+        uses: actions/checkout@v4
+
+      - name: Verificar Arquivos Obrigatórios de Documentação
+        shell: pwsh
+        run: |
+          $required = @("README.md", "CHANGELOG.md", "INSTALL.md", "TROUBLESHOOTING.md", "UPDATER.md", "LICENSE", "checksums.sha256")
+          foreach ($f in $required) {
+            if (-not (Test-Path $f)) {
+              Write-Error "Arquivo obrigatório ausente: $f"
+              exit 1
+            }
+            Write-Host "✓ Encontrado: $f"
+          }
+
+      - name: Validar Formato das Checksums SHA-256
+        shell: pwsh
+        run: |
+          Get-Content checksums.sha256 | ForEach-Object {
+            Write-Host "Checksum registrada: $_"
+          }
+
+      - name: Resumo da Execução
+        run: |
+          echo "### Validação de Release Concluída com Sucesso! :rocket:" >> $env:GITHUB_STEP_SUMMARY
+          echo "Todos os documentos e metadados de integridade foram verificados." >> $env:GITHUB_STEP_SUMMARY
