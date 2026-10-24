@@ -15,7 +15,7 @@ Este documento fornece o passo a passo completo para instalar, configurar e inic
 
 ## 📦 Método 1: Instalação via Executável Direto (`ROGLauncher.exe`)
 
-1. Acesse a página de **[Última Release](https://github.com/castellorogerio/rog-launcher-releases/releases/latest)**.
+1. Acesse a página de **[Releases Públicas](https://github.com/castellorogerio/rog-launcher-releases/releases)** ou baixe diretamente os pacotes da versão atual.
 2. Baixe o arquivo **`ROGLauncher.exe`**.
 3. Crie uma pasta para o aplicativo em um disco com boa velocidade (por exemplo: `C:\Jogos\ROGLauncher` ou `D:\ROGLauncher`).
 4. Mova o executável baixado para dentro dessa pasta.

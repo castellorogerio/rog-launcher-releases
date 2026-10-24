@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/castellorogerio/rog-launcher-releases/releases/latest"><img src="https://img.shields.io/github/v/release/castellorogerio/rog-launcher-releases?include_prereleases&label=Vers%C3%A3o%20Beta&color=red" alt="Versão Beta"/></a>
+  <a href="https://github.com/castellorogerio/rog-launcher-releases/releases"><img src="https://img.shields.io/github/v/release/castellorogerio/rog-launcher-releases?include_prereleases&label=Vers%C3%A3o%20Beta&color=red" alt="Versão Beta"/></a>
   <a href="https://github.com/castellorogerio/rog-launcher-releases/releases"><img src="https://img.shields.io/github/downloads/castellorogerio/rog-launcher-releases/total?label=Downloads&color=blue" alt="Total Downloads"/></a>
   <img src="https://img.shields.io/badge/Plataforma-Windows%2010%20%7C%2011%20(64--bit)-0078D6" alt="Windows 10/11 64-bit"/>
   <img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-green" alt="Licença MIT"/>
@@ -75,14 +75,14 @@ O **ROG Launcher** é uma interface desktop moderna, construída sobre **Python,
 
 ## 🚀 4. Como Baixar a Versão Beta
 
-Você pode baixar a versão mais recente diretamente na página de **[Releases](https://github.com/castellorogerio/rog-launcher-releases/releases/latest)**:
+Você pode baixar a versão mais recente diretamente na página de **[Releases](https://github.com/castellorogerio/rog-launcher-releases/releases)**:
 
 1. **Opção 1 — Executável Direto (`ROGLauncher.exe`)**:
    * Arquivo único pré-compilado, pronto para rodar.
-   * [Baixar ROGLauncher.exe](https://github.com/castellorogerio/rog-launcher-releases/releases/latest/download/ROGLauncher.exe)
+   * [Baixar ROGLauncher.exe](https://github.com/castellorogerio/rog-launcher-releases/releases/download/v4.9-beta/ROGLauncher.exe)
 2. **Opção 2 — Pacote ZIP Portátil (`ROGLauncher-v4.9-beta-win64.zip`)**:
    * Pacote compactado contendo o executável, instruções e ferramentas auxiliares.
-   * [Baixar ROGLauncher-v4.9-beta-win64.zip](https://github.com/castellorogerio/rog-launcher-releases/releases/latest/download/ROGLauncher-v4.9-beta-win64.zip)
+   * [Baixar ROGLauncher-v4.9-beta-win64.zip](https://github.com/castellorogerio/rog-launcher-releases/releases/download/v4.9-beta/ROGLauncher-v4.9-beta-win64.zip)
 
 ### Verificação de Integridade (Checksums SHA-256)
 Para garantir que o arquivo baixado não foi corrompido, abra o PowerShell e compare a hash:
